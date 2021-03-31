@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        {
+            function changepic(imgSrc)
+            {
+                document.getElementById("pic").src=imgSrc;
+            }
+        }
+    </script>
+</head>
+<body bgcolor="#666ff">
+    <h1>ImageRollover</h1>
+    <img src="image/img_bg_1.jpg" id="pic" onmousemove="changepic('image/img_bg_2.jpg')"  onmouseout="changepic('image/img_bg_1.jpg')">
+    
+</body>
+</html>
