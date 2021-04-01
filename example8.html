@@ -4,48 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function setBackground(bgSrc)
+        {
+            document.body.background=bgSrc;
+        }
+    </script>
 </head>
-<script>
-    pics=new Array("image/gal1.jpg","image/gal2.jpg","image/gal3.png","image/gal4.jpg","image/gal5.jpg",);
-    count=0;pcount=pics.lenght;
-    function npic()
-    {
-        count++
-        if(count<pcount)
-        document.pic.src=pics[count]
-        else
-        {
-         count=0;
-         document.pic.src=pics[count]
-        }
-    }
-    function ppic()
-    {
-        count--
-        if(count>-1)
-        document.pic.src=pics[count]
-        else
-        {
-            count=pcount-1;
-              document.pic.src=pics[count]
-        }
-
-    }
-</script>
-<body bgcolor="#0099FF">
-    <table>
-        <tr>
-            <td>
-                <img src="image/gal1.jpg" border="2" name="pic" height="250" width="700">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <img src="image/gal2.jpg" onclick="ppic()" height="50" width="50">
-                <img src="image/gal3.png" onclick="npic()" height="50" width="50">
-            </td>
-        </tr>
-    </table>
+<body>
+     <h1 onclick="setBackground('image/img_bg_1.jpg')">Wallpaper1</h1>
+     <h1 onclick="setBackground('image/img_bg_2.jpg')">Wallpaper2</h1>
+     
     
 </body>
 </html>

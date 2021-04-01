@@ -4,28 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-        {
-            function changepic(imgSrc)
-            {
-                document.getElementById("pic").src=imgSrc;
-            }
-        }
-    </script>
 </head>
 <body>
-    <table width="711" border="0" align="center">
-        <tr>
-            <td height="297">
-                <img src="image/img_bg_1.jpg" id="pic" height="400" width="700" border="2">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <img src="image/img_bg_1.jpg" height="100" width="133" border="2" onclick="changepic('image/img_bg_1.jpg')">
-                <img src="image/img_bg_2.jpg" height="100" width="133" border="2" onclick="changepic('image/img_bg_2.jpg')">
-            </td>
-        </tr>
-    </table>
+    <p onclick="loop()">Check loop</p>
+    <script>
+         function loop()
+        {
+            for(var i=1; i<11; i++)
+            {
+                document.write("Hello Dear</br>");
+            }
+            var j=0;
+            do{
+                document.write("Pkistan Zindabad</br>");
+                j++;
+            }
+            while(j<10);
+            
+        }
+    </script>
 </body>
 </html>

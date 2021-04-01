@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function setBackground(bgSrc)
+        function getName()
         {
-            document.body.background=bgSrc;
+           var name=prompt("Enter your name ","User");
+           document.write("Welcome Mr."+name);
         }
     </script>
 </head>
-<body>
-     <h1 onclick="setBackground('image/img_bg_1.jpg')">Wallpaper1</h1>
-     <h1 onclick="setBackground('image/img_bg_2.jpg')">Wallpaper2</h1>
-     
-    
+<body onload="getName()">
 </body>
 </html>

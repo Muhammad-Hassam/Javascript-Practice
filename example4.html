@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+</head>
+<body>
+    <button type="submit" onclick="playgame()">Play Game</button>
+
     <script>
+        function playgame()
         {
-            function changepic(imgSrc)
+            var Num=parseInt(Math.random());
+            var User=prompt("Enter a num", 0);
+            if(User==Num)
             {
-                document.getElementById("pic").src=imgSrc;
+                alert("You are Won");
+            }
+            else{
+                alert("You are Lose, correct answer is", Num);
             }
         }
     </script>
-</head>
-<body bgcolor="#666ff">
-    <h1>ImageRollover</h1>
-    <img src="image/img_bg_1.jpg" id="pic" onmousemove="changepic('image/img_bg_2.jpg')"  onmouseout="changepic('image/img_bg_1.jpg')">
-    
 </body>
 </html>

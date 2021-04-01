@@ -5,25 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function startTime()
+        function setText(txtcolor)
         {
-          var today=new Date();
-          var h=today.getHours();
-          var m=today.getMinutes();
-          var s=today.getSeconds();
-          m=checkTime(m);
-          s=checkTime(s);
-          document.getElementById('txt').innerHTML=h+":"+m+":"+s;
-          var t=setTimeout(function(){starttime()},500);
-        }
-        function checkTime(i)
-        {
-            if(i<10){i+"0"+i};
-            return i;
+            document.body.style.color=txtcolor;
         }
     </script>
 </head>
-<body onload="startTime()">
-    <div id="txt"></div>
+<body>
+    <p onclick="setText('blue')">Blue</p> 
+    <p onclick="setText('red')">Red</p>   
+    <p onclick="setText('orange')">Orange</p>
 </body>
 </html>
